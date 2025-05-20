@@ -1,0 +1,70 @@
+/**
+ * 小票打印系统样式文件
+ */
+
+/* 全局样式 */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* 小票预览样式 */
+.receipt-preview {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 菜品输入表单 */
+.dish-input-form {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* 菜品列表项 */
+.dish-item {
+    transition: background-color 0.3s;
+}
+
+.dish-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* 打印按钮 */
+.print-btn {
+    font-size: 1.2rem;
+}
+
+/* 管理员页面表格 */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* 登录和注册卡片 */
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .receipt-preview {
+        font-size: 0.8rem;
+    }
+    
+    .btn-group-sm > .btn {
+        padding: 0.25rem 0.4rem;
+    }
+}
